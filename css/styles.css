@@ -16,6 +16,7 @@
   --second-path-logo-color: #000000;
   --contacts-footer-color: #ffffff99;
   --border-card-color: #eeeeee;
+  --accent-social-icon-color: #afb1b8;
 }
 .list {
   list-style: none;
@@ -169,6 +170,20 @@ html {
   border-right: 1px solid var(--border-card-color);
   border-bottom: 1px solid var(--border-card-color);
 }
+.feature-list-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--btn-portfolio-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.feature-list-icons {
+  width: 70px;
+  height: 70px;
+}
 .feature-list {
   display: flex;
   color: initial;
@@ -197,18 +212,28 @@ html {
   display: flex;
 }
 .contacts-number {
-  margin-left: 50px;
+  margin-left: 30px;
 }
+.contact-icon {
+  margin-right: 10px;
+}
+
 .contacts {
   color: var(--secondary-text-color);
 }
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
-
 .hero-section {
-  background-color: var(--hero-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/bgimg.jpg");
+  background-size: cover;
+  background-color: #c4c4c4;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -221,7 +246,6 @@ html {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-color-text);
-  background-color: var(--hero-background-color);
   margin: 0 auto;
 }
 .invisible-header {
@@ -255,6 +279,36 @@ html {
   color: var(--main-section-text-color);
   margin-bottom: 50px;
 }
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-item {
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--btn-focus-color-text);
+  justify-content: center;
+  align-items: center;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--btn-focus-color-text);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-icon {
+  fill: var(--accent-social-icon-color);
+}
 .work-section {
   display: flex;
   justify-content: space-between;
@@ -286,13 +340,45 @@ html {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
 .text-team-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-color: var(--hero-color-text);
+  padding: 30px 32px;
+  background-color: var(--btn-focus-color-text);
+}
+.our-clients {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--btn-main-color-text);
 }
 
+.our-client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.our-client-link {
+  display: flex;
+
+  width: 170px;
+  height: 92px;
+  margin-top: 50px;
+}
+.our-client-logo {
+}
+.our-client-link:hover .our-client-icon,
+.our-client-link:focus .our-client-icon {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+.our-client-icon {
+  padding: 16px 32px;
+  fill: var(--accent-social-icon-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
 .address:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -339,4 +425,14 @@ html {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
+}
+.footer-wrapper {
+}
+.footer-social-text {
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--footer-color-adress-text);
+}
+.footer-social {
 }
