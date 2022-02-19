@@ -427,12 +427,38 @@ html {
   color: var(--secondary-text-color);
 }
 .footer-wrapper {
+  display: flex;
 }
 .footer-social-text {
+  display: block;
+  width: 165px;
+  height: 15px;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
   color: var(--footer-color-adress-text);
+  margin-bottom: 20px;
 }
 .footer-social {
+  margin-top: 12px;
+  margin-bottom: 100px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+.social-list-icon-footer {
+  fill: var(--footer-color-adress-text);
 }
