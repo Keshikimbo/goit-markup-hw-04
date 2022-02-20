@@ -170,6 +170,15 @@ html {
   border-right: 1px solid var(--border-card-color);
   border-bottom: 1px solid var(--border-card-color);
 }
+.project-list-hover .project-text-wrapper:hover,
+.project-list-hover .project-text-wrapper:focus {
+  padding: 20px 0px 20px 24px;
+  border-left: 1px solid var(--border-card-color);
+  border-right: 1px solid var(--border-card-color);
+  border-bottom: 1px solid var(--border-card-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .feature-list-icon-bg {
   display: flex;
   justify-content: center;
