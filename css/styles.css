@@ -170,12 +170,9 @@ html {
   border-right: 1px solid var(--border-card-color);
   border-bottom: 1px solid var(--border-card-color);
 }
-.project-list-hover .project-text-wrapper:hover,
-.project-list-hover .project-text-wrapper:focus {
-  padding: 20px 0px 20px 24px;
-  border-left: 1px solid var(--border-card-color);
-  border-right: 1px solid var(--border-card-color);
-  border-bottom: 1px solid var(--border-card-color);
+.project-list-hover:hover .project-text-wrapper,
+.project-list-hover:focus .project-text-wrapper {
+  border: 1px solid var(--border-card-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -219,6 +216,7 @@ html {
   letter-spacing: 0.02em;
   margin-left: auto;
   display: flex;
+  align-items: baseline;
 }
 .contacts-number {
   margin-left: 30px;
@@ -229,12 +227,15 @@ html {
 
 .contacts {
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+  display: block;
 }
 .contacts:hover,
 .contacts:focus {
-  color: var(--accent-color);
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
+
 .hero-section {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -243,9 +244,13 @@ html {
     url("../img/bgimg.jpg");
   background-size: cover;
   background-color: #c4c4c4;
+  max-width: 1600px;
+  height: 600px;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  margin: 0 auto;
 }
 .hero {
   width: 696px;
@@ -366,13 +371,13 @@ html {
 .our-client-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .our-client-link {
   display: flex;
 
   width: 170px;
   height: 92px;
-  margin-top: 50px;
 }
 .our-client-logo {
 }
@@ -437,11 +442,10 @@ html {
 }
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 .footer-social-text {
   display: block;
-  width: 165px;
-  height: 15px;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
@@ -449,11 +453,7 @@ html {
   margin-bottom: 20px;
 }
 .footer-social {
-  margin-top: 12px;
-  margin-bottom: 100px;
   margin-left: 70px;
-  width: 206px;
-  height: 80px;
 }
 .footer-social-list {
   display: flex;
