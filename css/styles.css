@@ -235,6 +235,8 @@ html {
   color: var(--secondary-text-color);
   fill: var(--secondary-text-color);
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contacts:hover,
 .contacts:focus {
