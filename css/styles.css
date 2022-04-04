@@ -177,7 +177,6 @@ html {
 }
 .project-list-hover:hover,
 .project-list-hover:focus{
-  border: 1px solid var(--border-card-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -453,9 +452,9 @@ html {
   align-items: baseline;
 }
 .footer-social-text {
-  display: block;
-  font-weight: bold;
-  line-height: 16px;
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--footer-color-adress-text);
   margin-bottom: 20px;
@@ -478,4 +477,7 @@ html {
 }
 .social-list-icon-footer {
   fill: var(--footer-color-adress-text);
+}
+.current{
+  color: var(--accent-color);
 }
